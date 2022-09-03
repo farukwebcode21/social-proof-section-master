@@ -65,7 +65,7 @@ body {
 }
 .card {
   width: 300px;
-  height: 150px;
+  height: 190px;
   background-color: var(--primary-very-dark-magenta);
   margin-right: 1rem;
   padding: 20px 15px;
@@ -75,13 +75,13 @@ body {
   display: flex;
   align-items: center;
 }
-.profile_detail h3 {
+.profile_detail h2 {
   font-size: 1rem;
   color: var(--white);
   margin-bottom: 4px;
   font-weight: var(--fs-700);
 }
-.profile_detail h5 {
+.profile_detail h3 {
   font-size: 0.8rem;
   color: var(--soft-pink);
 }
@@ -114,6 +114,26 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .rating_card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .top-section {
+    display: block;
+  }
+
+  .ratings > div,
+  .rating_card > div {
+    margin: 0;
+  }
+
+  .card {
+    width: auto;
+  }
 }
 
 @media (max-width: 375px) {
